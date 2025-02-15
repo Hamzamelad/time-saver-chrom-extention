@@ -1,0 +1,45 @@
+h1 {
+    color: red;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.wallpaper {
+    width: 100%;
+    object-fit: contain;
+}
+
+.mot-box {
+    position: absolute;
+    top: 32px;
+    max-width: 680px;
+
+}
+
+.mot-header {
+    color: rgb(203, 209, 224);
+    font-size: 3rem;
+    font-weight: 800; 
+    text-align: center;
+}
+
+.mot-des {
+    color: rgb(167, 174, 192);
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 12px;
+}

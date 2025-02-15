@@ -1,0 +1,29 @@
+{
+    "name": "Hello Extensions",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "activeTab"
+    ],
+    "icons": {
+        "32": "icons/time-saver-32.png",
+        "48": "icons/time-saver-48.png"
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "*://*.youtube.com/*",
+            "*://*.kick.com/*"
+          ],
+          "all_frames": true
+        }
+      ],
+      "web_accessible_resources": [
+        {
+          "resources": [ "camping.jpg", "index.html", "style.css"],
+          "matches": [ "*://*.youtube.com/*", "*://*.kick.com/*" ]
+        }
+      ]
+  }
