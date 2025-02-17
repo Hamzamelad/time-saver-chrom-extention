@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site blocker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root" class="root">
+        <div class="header">
+            <div class="logo-container">
+                <img src="logo.png" alt="logo">
+            </div>
+            <p>Block time-wasting sites</p>
+        </div>
+        <div class="body">
+            <form id="add-form">
+                <input type="text" name="domain" placeholder="example.com">
+                <button type="submit" >
+                    <img class="add-icon" src="add-white.png" alt="add">
+                </button>
+            </form>
+            <ul id="domains-list"></ul>
+        </div>
+        <div class="footer ">
+            <label class="switch">
+                <input id="toggle" type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            <span>Block all instead specifed</span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
